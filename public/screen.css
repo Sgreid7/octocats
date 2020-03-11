@@ -8,5 +8,174 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100%;
+  background-color: #F8F9FA;
 }
+
+img {
+  height: 17rem;
+  width: auto;
+}
+
+nav {
+  background-color: rgba(254, 254, 254, 0.8);
+  border-bottom: 0.1rem solid #D5D6D6;
+  display: flex;
+  /* justify-content: center; */
+  font-size: 0.9rem;
+  min-width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav li {
+  padding: 0.5rem;
+}
+
+.brand {
+  margin-left: 0.2rem;
+}
+
+.home {
+  color: #858b91;
+}
+
+.last {
+  margin-left: auto;
+  padding-left: 0;
+}
+
+/* .hide {
+  display: none;
+} */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* margin-bottom: 4.3rem; */
+  margin: 4rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 0.1rem solid #e1e4e8;
+  width: 20rem;
+  height: auto;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  /* width: 70%; */
+  margin-right: auto;
+}
+
+/* .logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-top: 0;
+  margin-top: 0;
+} */
+
+p {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* * {
+  border: 1px solid green;
+} */
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* * {
+    border: 1px solid blue;
+  } */
+
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .card {
+    width: 14rem;
+  }
+
+  article {
+    margin: 1rem;
+  }
+
+  div {
+    width: 70%;
+  }
+
+}
+
+/* @media (min-width: 1024px) {
+  * {
+    border: 1px solid red;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+  }
+
+  article {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card img {
+    width: 80%;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+
+
+} */
