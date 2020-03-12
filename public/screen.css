@@ -11,6 +11,7 @@ body {
   padding: 0;
   min-height: 100%;
   background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -38,10 +39,13 @@ nav ul {
 
 nav li {
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .brand {
   margin-left: 0.2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .home {
@@ -51,6 +55,14 @@ nav li {
 .last {
   margin-left: auto;
   padding-left: 0;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+.hide:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -77,6 +89,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 65%;
 }
 
 .card img {
@@ -86,9 +99,10 @@ article {
   height: auto;
 }
 
-/* div {
-  margin-right: auto;
-} */
+p {
+  font-size: 0.8rem;
+  font-weight: thinner;
+}
 
 .logo {
   display: flex;
@@ -112,7 +126,7 @@ span {
   }
 }
 
-@media (min-width: 560px) {
+@media (min-width: 650px) {
   /* * {
     border: 1px solid blue;
   } */
@@ -128,18 +142,15 @@ span {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 5rem;
   }
 
   .logo {
     padding: 1rem 0;
   }
-
-  /* article {
-    width: 80%;
-  } */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   /* * {
     border: 1px solid blue;
   } */
@@ -151,19 +162,20 @@ span {
 
   main {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: hidden;
   }
 
   .logo {
     padding: 1rem 0;
   }
 
-  /* article {
-    width: 80%;
-  } */
+  .card {
+    width: 70%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -174,11 +186,19 @@ span {
   main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+
+  article {
+    width: 25%;
+    box-sizing: border-box;
+    margin: 1rem 0;
   }
 
   .card {
-    padding: 0.5rem;
-    width: 20%;
+    /* padding: 0.5rem; */
+    width: 85%;
     box-sizing: border-box;
   }
 }
