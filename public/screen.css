@@ -68,13 +68,17 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: 100%;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
+
+/* article {
+  height: 50vh;
+} */
 
 .card {
   border-radius: 0.5rem;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 0.3rem;
 }
 
