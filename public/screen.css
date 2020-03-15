@@ -22,7 +22,6 @@ nav {
   font-size: 0.9rem;
   min-width: 100%;
   position: fixed;
-  overflow: hidden;
   top: 0;
 }
 
@@ -66,37 +65,23 @@ nav li {
 }
 
 main {
-  display: flex;
+  display: grid;
   justify-content: center;
-  padding: 1rem;
-  flex-direction: column;
-  align-items: center;
-}
-
-article {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* margin-bottom: 4.3rem; */
-  /* margin: 4rem; */
+  grid-template-columns: 100%;
+  margin-top: 4rem;
 }
 
 .card {
   border-radius: 0.5rem;
-  text-align: center;
-  margin: 2rem;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 65%;
+  margin: 2rem;
+  border-radius: 0.3rem;
 }
 
 .card img {
-  border: 0.05rem solid #e1e4e8;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
+  border: 0.08rem solid #e1e4e8;
+  border-radius: 0.3rem;
+  width: 100%;
 }
 
 p {
@@ -130,89 +115,62 @@ footer hr {
   color: #858b91;
 }
 
-/* * {
-  border: 1px solid green;
-} */
-
 @media (max-width: 768px) {
   .hide {
     display: none;
   }
 }
 
-@media (min-width: 650px) {
-  /* * {
-    border: 1px solid blue;
-  } */
-
+@media (min-width: 545px) {
   nav {
     padding: 0;
     margin: 0;
   }
-
   main {
     display: grid;
-    grid-template-columns: 50% 50%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 5rem;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    margin-top: 6rem;
   }
-
+  .card {
+    margin: 0;
+    padding: 0;
+  }
   .logo {
     padding: 1rem 0;
   }
 }
 
-@media (min-width: 800px) {
-  /* * {
-    border: 1px solid blue;
-  } */
-
+@media (min-width: 1010px) {
   nav {
     padding: 0;
     margin: 0;
   }
-
   main {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow: hidden;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1rem;
   }
-
   .logo {
     padding: 1rem 0;
   }
-
-  .card {
-    width: 70%;
+  .card {}
+  p {
+    font-size: 0.9rem;
   }
 }
 
-@media (min-width: 1024px) {
-  /* * {
-    border: 1px solid red;
-  } */
-
+@media (min-width: 1240px) {
   main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1rem;
+    margin: 6rem 2.5rem;
   }
-
-  article {
-    width: 25%;
-    box-sizing: border-box;
-    margin: 1rem 0;
-  }
-
   .card {
-    /* padding: 0.5rem; */
-    width: 85%;
     box-sizing: border-box;
   }
 }
